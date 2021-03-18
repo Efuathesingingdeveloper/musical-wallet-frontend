@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import {fetchAccounts} from '../actions/fetchAccounts'
 import Accounts from '../components/Accounts'
-import AccountsInput from '../components/AccountsInput'
+import AccountInput from '../components/AccountInput'
 
 class  AccountsContainer extends React.Component{
 
@@ -12,10 +12,9 @@ componentDidMount() {
 
 
 render() {
- 
     return (
         <div>
-            <AccountInput/>
+            <AccountInput/><br/><br/>
             <Accounts accounts={this.props.accounts}/>
         </div>
     )
@@ -25,7 +24,7 @@ render() {
 
 }
 const mapStateToProps = state => {
-    return{
+    return {
      accounts: state.accounts
     }
 }

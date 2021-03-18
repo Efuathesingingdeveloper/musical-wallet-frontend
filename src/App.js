@@ -15,13 +15,6 @@ class App extends React.Component {
  
 
 
-// const mapStateToProps = (state) => {
-//   return {
-//     accounts: state.accounts
-
-//   }
-// }
-
 
 
 export default App;
