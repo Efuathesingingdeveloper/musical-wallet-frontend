@@ -9,8 +9,7 @@ export function fetchAccounts(){
         type: 'FETCH_ACCOUNTS',
         payload: accounts 
     }))
-    .then(response => response.json())
-    .then(account => dispatch({type: 'ADD_ACCOUNT', payload:account}))
+    
     }
 }
 

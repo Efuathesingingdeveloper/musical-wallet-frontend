@@ -1,5 +1,7 @@
 import React from 'react'
-import AccountInfo from './AccountInfo'
+import {Route, Link} from 'react-router-dom'
+
+import Account from './Account'
 
 
 
@@ -8,9 +10,10 @@ const Accounts = (props) => {
 
 return (
     <div>
-          <li> TEST</li> 
         {props.accounts.map(account => 
-        <div key={account.id}><AccountInfo account={account}/></div> )}
+        <li key={account.id}>
+            <Link to={`/accounts/${account.id}`}>{account.name}</Link>
+            </li> )}
     </div>
 )
 
