@@ -10,8 +10,13 @@ const Accounts = (props) => {
 
 return (
     <div>
+        
         {props.accounts.map(account => 
+        
         <li key={account.id}>
+
+            {/* <Link to={'/accounts/new'} component={AccountInput}</Link> */}
+
             <Link to={`/accounts/${account.id}`}>{account.name}</Link>
             </li> )}
     </div>

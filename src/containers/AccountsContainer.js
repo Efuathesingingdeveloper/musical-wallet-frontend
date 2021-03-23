@@ -27,9 +27,10 @@ render() {
     )
 }
 
+  }
 
 
-}
+
 const mapStateToProps = state => {
     return {
      accounts: state.accounts
