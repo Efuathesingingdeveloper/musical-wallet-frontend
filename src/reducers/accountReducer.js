@@ -4,7 +4,6 @@ export default function accountReducer(state = {accounts: []}, action) {
       case 'FETCH_ACCOUNTS':
          return {accounts: action.payload}
        case 'ADD_ACCOUNT':
-         console.log('inside REDUCER')
         return {...state, accounts: [...state.accounts, action.payload]}
         case 'ADD_TRANSACTION':
          let accounts = state.accounts.map(account => {

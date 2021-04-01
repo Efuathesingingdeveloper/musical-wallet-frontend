@@ -9,7 +9,8 @@ class TransactionInput extends React.Component {
     state = {
     kind:'deposit',
     amount:'',
-    description: ''
+    description: '',
+    category: ''
 
 
 
@@ -26,10 +27,12 @@ class TransactionInput extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.addTransaction(this.state, this.props.account.id)
-    this.setState({ 
+        debugger
+        this.setState({ 
     kind:'deposit',
     amount:'',
-    description: ''
+    description: '',
+    category: ''
 
 })
     }
@@ -44,6 +47,20 @@ class TransactionInput extends React.Component {
                     <option>deposit</option>
                     <option>withdraw</option>
                 </select><br/><br/>
+
+                <label>Transaction Category:</label>
+                <select name= "category" value={this.state.category} onChange={this.handleChange}>
+                    <option>Transportation</option>
+                    <option>Buying Supplies</option>
+                    <option>Event Cost</option>
+                    <option>Fees</option>
+                    <option>Paying Employees</option>
+                    <option>Studio Time</option>
+                    <option>other</option>
+
+
+                    </select><br/><br/>
+
                 <label>Transaction Amount:</label>
                  <input type="text" name="amount" value={this.state.amount}  onChange={this.handleChange}/>
                  <br/><br/>

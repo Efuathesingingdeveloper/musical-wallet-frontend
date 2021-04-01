@@ -36,8 +36,7 @@ export class Header extends Component {
         <div class="input-group">  
           <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2"/>  
           <div class="input-group-append">  
-            <button class="btn btn-primary" type="button">  
-            </button>  
+            
           </div>  
         </div>  
       </form>  
@@ -48,7 +47,7 @@ export class Header extends Component {
   <li class="nav-item dropdown no-arrow mx-1">  
     <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
       <i class="fas fa-bell fa-fw"></i>  
-      <span class="badge badge-danger badge-counter">3+</span>  
+      {/* <span class="badge badge-danger badge-counter">3+</span>   */}
     </a>  
   
     <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">  
