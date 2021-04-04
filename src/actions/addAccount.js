@@ -1,7 +1,5 @@
 export const addAccount = (data) => {
-console.log('add_account action')
     return (dispatch) => {
-        console.log('add_account action 2222')
 
         fetch('http://localhost:3000/api/v1/accounts', {
          method: 'POST',

@@ -1,15 +1,40 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import {fetchTransactions} from '../actions/fetchTransactions'
 
-function SearchBar(Transaction) {
+class SearchBar extends React.Component {
+
+
+
+    state = {
+        category:''
+      }  
+
+
+    handleClick = (event) => {
+        event.preventDefault()
+        this.props.fetchTransactions(window.location.pathname.split('').length - 10, event.target )
+        // let search = {...this.state, id: this.props.account.id}
+
+        console.log(window.location.pathname.split('').length - 10)
+    }
+render () {
+
     return (
         <div id= "search-bar">
-            <input/>
+            
             <button>Transportation</button>
-            <button> Buying Supplies</button>
+            <br></br>
+            <button onClick= {this.handleClick}> Buying Supplies</button> 
+            <br></br>
             <button>Event Cost</button>
+            <br></br>
             <button>Fees</button>
+            <br></br>
             <button>Paying Employees</button>
+            <br></br>
             <button>Studio Time</button>
+            <br></br>
             <button>other</button>
 
 
@@ -19,4 +44,15 @@ function SearchBar(Transaction) {
     )
 }
 
-export default SearchBar;
+}
+const mapStateToProps = transactions => {
+    console.log(transactions)
+
+    return {
+     transactions: transactions
+    }
+}
+export default connect(mapStateToProps, {fetchTransactions})(SearchBar)
+
+
+

@@ -1,5 +1,6 @@
 
-export default function accountReducer(state = {accounts: []}, action) {
+export default function accountReducer(state = {accounts: [] }, action) {
+  
     switch (action.type) {
       case 'FETCH_ACCOUNTS':
          return {accounts: action.payload}
@@ -34,6 +35,9 @@ export default function accountReducer(state = {accounts: []}, action) {
          return {...state, accounts: accountsVar1}
          default:
          return state 
-
+         case 'FETCH_TRANSACTIONS':
+           console.log('inside reducer' ,action.payload)
+          // return {transactions: action.payload.filter(transc => transc.category = action.payload) };
     }
+    
 }

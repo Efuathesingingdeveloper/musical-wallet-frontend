@@ -1,5 +1,6 @@
 import React, { Component } from 'react'  
 import Nav from './Nav'
+// import '../stylesheets/accounts.css'
   
 export class Header extends Component {  
     render() {  
@@ -15,14 +16,15 @@ export class Header extends Component {
 </button>  
   
   
-<form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">  
+{/*<form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">  
   <div class="input-group">  
     <div class="input-group-append">  
-      <button class="btn btn-primary" type="button">  
+       <button class="btn btn-primary" type="button">  
       </button>  
     </div>  
   </div>  
-</form>  
+</form> 
+*/}
   
   
 <ul class="navbar-nav ml-auto">  
@@ -45,10 +47,10 @@ export class Header extends Component {
   
    
   <li class="nav-item dropdown no-arrow mx-1">  
-    <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+    {/* <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
       <i class="fas fa-bell fa-fw"></i>  
-      {/* <span class="badge badge-danger badge-counter">3+</span>   */}
-    </a>  
+       <span class="badge badge-danger badge-counter">3+</span>   
+    </a>  */}
   
     <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">  
     <href>'/accounts/new'NEW ACCOUNT</href>
@@ -93,13 +95,16 @@ export class Header extends Component {
       <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>  
     </div>  
   </li>  
-  
-  
   <li class="nav-item dropdown no-arrow mx-1">  
-    <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+  {/* 
+  <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
       <i class="fas fa-envelope fa-fw"></i>  
     
     </a>  
+  
+  */}
+  
+    
   
     <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">  
       <h6 class="dropdown-header">  
@@ -107,7 +112,7 @@ export class Header extends Component {
       </h6>  
       <a class="dropdown-item d-flex align-items-center" href="#">  
         <div class="dropdown-list-image mr-3">  
-          <img class="rounded-circle" src="https://cdn.shopify.com/s/files/1/0149/3368/products/CRAFIC-Artist-Pencils-wallet_750x.jpg?v=1569128847" alt=""/>  
+          {/* <img class="rounded-circle" src="https://cdn.shopify.com/s/files/1/0149/3368/products/CRAFIC-Artist-Pencils-wallet_750x.jpg?v=1569128847" alt=""/>   */}
           <div class="status-indicator bg-success"></div>  
         </div>  
         <div class="font-weight-bold">  
@@ -117,7 +122,7 @@ export class Header extends Component {
       </a>  
       <a class="dropdown-item d-flex align-items-center" href="#">  
         <div class="dropdown-list-image mr-3">  
-          <img class="rounded-circle" src="https://cdn.shopify.com/s/files/1/0149/3368/products/CRAFIC-Artist-Pencils-wallet_750x.jpg?v=1569128847" alt=""/>  
+          {/* <img class="rounded-circle" src="https://cdn.shopify.com/s/files/1/0149/3368/products/CRAFIC-Artist-Pencils-wallet_750x.jpg?v=1569128847" alt=""/>   */}
           <div class="status-indicator"></div>  
         </div>  
         <div>  
@@ -127,7 +132,7 @@ export class Header extends Component {
       </a>  
       <a class="dropdown-item d-flex align-items-center" href="#">  
         <div class="dropdown-list-image mr-3">  
-          <img class="rounded-circle" src="https://cdn.shopify.com/s/files/1/0149/3368/products/CRAFIC-Artist-Pencils-wallet_750x.jpg?v=1569128847" alt=""/>  
+          {/* <img class="rounded-circle" src="https://cdn.shopify.com/s/files/1/0149/3368/products/CRAFIC-Artist-Pencils-wallet_750x.jpg?v=1569128847" alt=""/>   */}
           <div class="status-indicator bg-warning"></div>  
         </div>  
         <div>  
@@ -137,7 +142,7 @@ export class Header extends Component {
       </a>  
       <a class="dropdown-item d-flex align-items-center" href="#">  
         <div class="dropdown-list-image mr-3">  
-          <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt=""/>  
+          {/* <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt=""/>   */}
           <div class="status-indicator bg-success"></div>  
         </div>  
         <div>  
@@ -154,7 +159,7 @@ export class Header extends Component {
   
   <li class="nav-item dropdown no-arrow">  
     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
-      <img class="img-profile rounded-circle" src="https://cdn.shopify.com/s/files/1/0149/3368/products/CRAFIC-Artist-Pencils-wallet_750x.jpg?v=1569128847"/>  
+      {/* <img class="img-profile rounded-circle" src="https://cdn.shopify.com/s/files/1/0149/3368/products/CRAFIC-Artist-Pencils-wallet_750x.jpg?v=1569128847"/>   */}
     </a>  
   
     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">  

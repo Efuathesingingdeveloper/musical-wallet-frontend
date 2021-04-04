@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addAccount} from '../actions/addAccount'
+import '../stylesheets/ai.css'
 
 class AccountInput extends React.Component {
  
@@ -27,15 +28,27 @@ class AccountInput extends React.Component {
 render(){
     return(
      <div>
+       <div class="artist-form">
+         <header class="welcome">
+         <h1>Create an Account</h1>
+         <h5>Thank you for choosing Artist Wallet</h5>
+         </header>
+         
        <form onSubmit={this.handleSubmit}>
-           <label>Artist Account Name: </label>
-          <input type= 'text' placeholder='Name' value={this.state.name}  name="name" onChange={this.handleChange}/> 
+         <div class="form-group">
+          <label>Artist Account Name: </label> <br/><br/>
+            <input type= 'text' class="form-control" placeholder='Name' value={this.state.name}  name="name" onChange={this.handleChange}/> 
+         </div>
           <br/><br/>
-          <label>Artist Account Balance: </label>
-          <input type= 'text' placeholder='Balance' value={this.state.balance} name="balance"  onChange={this.handleChange}/> 
+          <div class="form-group">
+            <label>Artist Account Balance: </label><br/><br/>
+            <input type= 'text' class="form-control" placeholder='Balance' value={this.state.balance} name="balance"  onChange={this.handleChange}/> 
+          </div>
+         
           <br/><br/>
           < input type="submit" />
         </form>
+        </div>
     </div>
     )
   }
